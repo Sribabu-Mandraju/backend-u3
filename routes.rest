@@ -1,0 +1,154 @@
+POST http://localhost:8080/admin/signup
+Content-Type: application/json
+
+{
+    "name":"sribabu",
+    "company":"u3tech",
+    "email":"sri@gmail.com",
+    "password":"sri",
+    "contact":"630s37238847",
+    "User_type":"ADMIN"
+}
+
+###
+POST http://localhost:8080/admin/login
+Content-Type: application/json
+
+  {
+    "Email":"sri@gmail.com",
+    "Password":"sri"
+ }
+
+ # Headers
+Authorization: HELLO_WORLD
+
+###
+POST http://localhost:8080/client/signup
+Content-Type: application/json
+
+{
+    "Email": "user12@example.com",
+    "Name": "Johnfde Doe",
+    "Company": "ABCDESF Corp",
+    "Password": "secresstpassword2",
+    "Contact": "12345s678902"
+}
+
+
+###
+
+POST http://localhost:8080/client/login
+Content-Type: application/json
+Authorization: HELLO_WORLD
+
+ {
+    "Email":"user1@example.com",
+    "Password":"secretpassword2"
+ }
+
+ # Headers
+Authorization: HELLO_WORLD
+
+
+###
+GET http://localhost:8080/admin/allAdmins
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzAzNzM4ODQ3IiwiUGFzc3dvcmQiOiIiLCJDb21wYW55IjoiYW1hem9uIiwiVXNlcl9pZCI6IjY1YmUyNzVlMDljOTExZDJiMWFlZjMxNiIsImV4cCI6MTcwODI0MTE5N30.WQXeVejWscH0hOkPt4PIJW12ADXVVYWHp9sglRsBVCE
+
+
+###
+POST http://localhost:8080/admin/sendRequest
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzBzMzcyMzg4NDciLCJQYXNzd29yZCI6IiIsIkNvbXBhbnkiOiJ1M3RlY2giLCJVc2VyX2lkIjoiNjVkZWJmZDA2ZWE3OTQyYzM2N2VkNjJiIiwiZXhwIjoxNzA5Mzc2NTg3fQ.r9M08jZP1Csu1vU5mn0CppJUtU3WWyq3oF4TjtDhULs
+
+{
+  "name": "sribabu1",
+  "sendto": "the processdd",
+  "discription": "mdddde",
+  "short_discription": "i am grddeat"
+}
+
+###
+GET  http://localhost:8080/admin/all-requests
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtMmFuZHJhanVAZ21haWwuY29tIiwiTmFtZSI6InNyaWJhYjJ1IiwiQ29udGFjdCI6IjYzMHMzNzIzODg0NyIsIlBhc3N3b3JkIjoiIiwiQ29tcGFueSI6ImFtYXMyem9uIiwiVXNlcl9pZCI6IjY1YzBjNTQ0ZWYzYTFiNDAxMmM1Zjg4OSIsImV4cCI6MTcwNzY1MzI2NX0._bDlmihvtiJssfRwVzUb3qRoT9LpVrY4ox_q2qMu2ZA
+
+
+###
+
+PUT  http://localhost:8080/admin/modify-request/65c25c9f8b0befe3d15a3f54 
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtMmFuZHJhanVAZ21haWwuY29tIiwiTmFtZSI6InNyaWJhYjJ1IiwiQ29udGFjdCI6IjYzMHMzNzIzODg0NyIsIlBhc3N3b3JkIjoiIiwiQ29tcGFueSI6ImFtYXMyem9uIiwiVXNlcl9pZCI6IjY1YzBjNTQ0ZWYzYTFiNDAxMmM1Zjg4OSIsImV4cCI6MTcwNzY1MzI2NX0._bDlmihvtiJssfRwVzUb3qRoT9LpVrY4ox_q2qMu2ZA
+
+{
+  
+  "action": "Rejected"
+}
+###
+GET http://localhost:8080/admin/adminInfo
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtMmFuZHJhanVAZ21haWwuY29tIiwiTmFtZSI6InNyaWJhYjJ1IiwiQ29udGFjdCI6IjYzMHMzNzIzODg0NyIsIlBhc3N3b3JkIjoiIiwiQ29tcGFueSI6ImFtYXMyem9uIiwiVXNlcl9pZCI6IjY1YzBjNTQ0ZWYzYTFiNDAxMmM1Zjg4OSIsImV4cCI6MTcwNzIzODA5OX0.rQs705Ku3EfMDgSsBEUOSik31Odk5FqRY8L7WZgac8A
+
+###
+GET  http://localhost:8080/admin/client/all-clients 
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Im1hZGhhdmltYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoibWFkaGF2aSIsIkNvbnRhY3QiOiI2MzBzMzcyMzg4NDciLCJQYXNzd29yZCI6IiIsIkNvbXBhbnkiOiJ1M3RlY2giLCJVc2VyX2lkIjoiNjVjNzZiMzI2MjVmMTkyNDRhZDhlOTVjIiwiZXhwIjoxNzA3NjU0MzIyfQ.uNZcjS2a_jKhoaWYvhz_QL6iqy-9S7L4i4ijUgPSdHU
+
+
+###
+
+GET  http://localhost:8080/admin/client/65b906c56b2a79046a9b5e35
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Im1hZGhhdmltYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoibWFkaGF2aSIsIkNvbnRhY3QiOiI2MzBzMzcyMzg4NDciLCJQYXNzd29yZCI6IiIsIkNvbXBhbnkiOiJ1M3RlY2giLCJVc2VyX2lkIjoiNjVjNzZiMzI2MjVmMTkyNDRhZDhlOTVjIiwiZXhwIjoxNzA3NjU0MzIyfQ.uNZcjS2a_jKhoaWYvhz_QL6iqy-9S7L4i4ijUgPSdHU
+
+###
+
+GET http://localhost:8080/admin/jobListing/getJobListingById/65d04ddfa0cc240bda83b0cf
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzAzNzM4ODQ3IiwiUGFzc3dvcmQiOiIiLCJDb21wYW55IjoiYW1hem9uIiwiVXNlcl9pZCI6IjY1YmUyNzVlMDljOTExZDJiMWFlZjMxNiIsImV4cCI6MTcwODI0MjQ5NX0.7Odo54rs1yuXSexvpc_nD937W3-WOlBcayau9TA6Z_I
+
+###
+
+GET http://localhost:8080/admin/jobListing/getAllJobListings
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzAzNzM4ODQ3IiwiUGFzc3dvcmQiOiIiLCJDb21wYW55IjoiYW1hem9uIiwiVXNlcl9pZCI6IjY1YmUyNzVlMDljOTExZDJiMWFlZjMxNiIsImV4cCI6MTcwODI0MjQ5NX0.7Odo54rs1yuXSexvpc_nD937W3-WOlBcayau9TA6Z_I
+
+
+###
+
+POST http://localhost:8080/admin/jobListing/createJobListing
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzAzNzM4ODQ3IiwiUGFzc3dvcmQiOiIiLCJDb21wYW55IjoiYW1hem9uIiwiVXNlcl9pZCI6IjY1YmUyNzVlMDljOTExZDJiMWFlZjMxNiIsImV4cCI6MTcwODI0MjQ5NX0.7Odo54rs1yuXSexvpc_nD937W3-WOlBcayau9TA6Z_I
+
+{
+  "role":"developer",
+  "location":"hyderabad",
+  "company":"techbuggy",
+  "desc":"Techbuggy is a startup innovating software solutions",
+  "requirements":["html","css"],
+  "link":"https://techbuggy.in/",
+  "active":false
+}
+
+
+###
+
+PATCH  http://localhost:8080/admin/jobListing/updateJobListing/65d098c91f265897185d3047
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzAzNzM4ODQ3IiwiUGFzc3dvcmQiOiIiLCJDb21wYW55IjoiYW1hem9uIiwiVXNlcl9pZCI6IjY1YmUyNzVlMDljOTExZDJiMWFlZjMxNiIsImV4cCI6MTcwODI0MjQ5NX0.7Odo54rs1yuXSexvpc_nD937W3-WOlBcayau9TA6Z_I
+
+{
+  "role":" Developer",
+  "location":"hyderabad",
+  "company":"techbuggy",
+  "desc":"Techbuggy is a startup innovating software solutions",
+  "requirements":["HTML","CSS","JavaScript","React","Tailwind Css"],
+  "link":"https://techbuggy.in/",
+  "active":true
+}
+
+###
+
+DELETE http://localhost:8080/admin/jobListing/deleteJobListing/65d098c91f265897185d3047
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InNyaWJhYnVtYW5kcmFqdUBnbWFpbC5jb20iLCJOYW1lIjoic3JpYmFidSIsIkNvbnRhY3QiOiI2MzAzNzM4ODQ3IiwiUGFzc3dvcmQiOiIiLCJDb21wYW55IjoiYW1hem9uIiwiVXNlcl9pZCI6IjY1YmUyNzVlMDljOTExZDJiMWFlZjMxNiIsImV4cCI6MTcwODI0MjQ5NX0.7Odo54rs1yuXSexvpc_nD937W3-WOlBcayau9TA6Z_I
