@@ -1,10 +1,10 @@
 package middleware
 
 import (
-	"fmt"
-	"net/http"
 	helper "backend/helpers"
+	"fmt"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func Authenticate() gin.HandlerFunc {
@@ -20,7 +20,7 @@ func Authenticate() gin.HandlerFunc {
 		claims, err := helper.ValidateToken(clientToken)
 		if err != "" {
 			c.JSON(http.StatusInternalServerError, gin.H{
-				"error": "error  occoured ",
+				"error": "error  occoureded ",
 			})
 			c.Abort()
 			return
